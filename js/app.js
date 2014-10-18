@@ -1,25 +1,25 @@
 $(document).ready(function () {
 
-    var toSay = "";
+    var toSay;
     for (var x = 1; x <= 100; x++)
     {
-
+        toSay = "";
         if (x % 5 === 0 && x % 3 === 0)
         {
-            toSay == "fizzbuzz"
+            toSay = "fizzbuzz"
         }
         else if (x % 5 === 0)
         {
-            toSay == "buzz"
+            toSay = "buzz"
         }
         else if (x % 3 === 0)
         {
-            toSay == "fizz"
+            toSay = "fizz"
         }
         else {
-            toSay == i;
+            toSay = x;
         }
         
-        $('.fizzbuzz').append(toSay + "<br />");
+        $('#fizzbuzz').append("" + toSay + "<br />");
     }
 });
